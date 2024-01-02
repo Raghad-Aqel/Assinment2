@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbgg"
+    tools:context=".BooksApiActivity">
+
+    <Button
+        android:id="@+id/buttonGetBooks"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Get Books Title"
+        android:onClick="btnGetBooksOnClick"
+        android:background="@drawable/bg2"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        />
+
+    <ListView
+        android:id="@+id/lstBooks"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/buttonGetBooks"/>
+
+    <Button
+        android:id="@+id/btnBooksInfo"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/lstBooks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="View Book Info."
+        android:onClick="btnViewBookInfoOnClick"
+        android:background="@drawable/bg2"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

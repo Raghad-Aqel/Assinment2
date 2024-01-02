@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbgg"
+    android:orientation="vertical"
+    tools:context=".BookInfoActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Book Information"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="31dp"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:id="@+id/edtEnterBookTitle"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Enter Book Title"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="23dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnShowBook"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Show Book Info."
+        android:layout_gravity="center"
+        android:background="@drawable/bg2"
+        android:padding="8dp"
+        android:onClick="btnShowBookOnClick"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtBookInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingMultiplier="1.5"
+            android:padding="8dp"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

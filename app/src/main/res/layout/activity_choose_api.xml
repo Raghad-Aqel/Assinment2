@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseAPIActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/txtChooseAPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:text="Choose API"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="35dp"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/btnMovieAPI"
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp"
+        android:text="MOVIES API"
+        android:layout_gravity="center"
+        android:background="@drawable/bg"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:padding="8dp"
+        android:onClick="movieApiOnCLick"
+        />
+
+    <Button
+        android:id="@+id/btnBookAPI"
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:text="BOOKS API"
+        android:layout_gravity="center"
+        android:background="@drawable/bg"
+        android:padding="8dp"
+        android:onClick="bookApiOnCLick"
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
